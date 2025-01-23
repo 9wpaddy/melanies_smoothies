@@ -25,7 +25,7 @@ pd_df =my_dataframe.to_pandas()
 # Convert snowflake frame to Pandas Dataframe so we can use LOC function 
 ingredients_list = st.multiselect(
     'Choose upto 5 ingredients:'
-    ,my_dataframe
+    ,pd_df
     ,max_selections =5
    
 )
